@@ -3,6 +3,10 @@
     "description": "The Laravel API Response Enhancer package provides a set of tools to standardize and simplify API responses in Laravel applications. This package aims to improve the consistency, readability, and usability of your API responses, making it easier for clients to consume your API.",
     "keywords": [
         "khant-nyar",
+        "laravel",
+        "api",
+        "rest-api",
+        "rest",
         "api-utils"
     ],
     "homepage": "https://github.com/khant-nyar/api-utils",
