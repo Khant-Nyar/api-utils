@@ -1,0 +1,56 @@
+{
+    "name": "khant-nyar/api-utils",
+    "description": "The Laravel API Response Enhancer package provides a set of tools to standardize and simplify API responses in Laravel applications. This package aims to improve the consistency, readability, and usability of your API responses, making it easier for clients to consume your API.",
+    "keywords": [
+        "khant-nyar",
+        "api-utils"
+    ],
+    "homepage": "https://github.com/khant-nyar/api-utils",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Khant Si Thu Phyo",
+            "email": "khantnyar.dev@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1|^8.3",
+        "illuminate/support": "^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "KhantNyar\\ApiUtils\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KhantNyar\\ApiUtils\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "format": "vendor/bin/pint",
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize":true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KhantNyar\\ApiUtils\\ApiUtilsServiceProvider"
+            ],
+            "aliases": {
+                "ApiUtils": "KhantNyar\\ApiUtils\\ApiUtilsFacade"
+            }
+        }
+    }
+}
